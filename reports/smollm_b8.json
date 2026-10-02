@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-02T22:53:01.860282",
+  "configuration": {
+    "model": "HuggingFaceTB/SmolLM2-360M",
+    "device": "mps",
+    "dtype": "torch.bfloat16",
+    "prompt_tokens": 256,
+    "output_tokens_per_request": 32,
+    "batch_size": 8,
+    "measured_runs": 5
+  },
+  "latency_ms": {
+    "prefill": 1124.321332987165,
+    "model_local_ttft": 1124.6316250180826,
+    "mean_itl_tpot": 30.3940310015253,
+    "median_itl": 29.8990830196999,
+    "decode_total": 942.2149610472843,
+    "end_to_end": 2074.121334007941
+  },
+  "throughput": {
+    "decode_tokens_per_second": 263.209575577472,
+    "aggregate_output_tokens_per_second": 123.42575904434521
+  },
+  "memory_mib": {
+    "model_parameters": 690.1190185546875,
+    "baseline_torch": 697.64306640625,
+    "observed_peak_torch": 972.73681640625,
+    "baseline_driver": 2176.625,
+    "final_driver": 2176.625
+  },
+  "memory_measurement_method": "maximum sampled PyTorch MPS allocation"
+}
